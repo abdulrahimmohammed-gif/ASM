@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASM REPORT : SERVICING</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      font-size: 14px;
+      color: #1b2430;
+      background: #ffffff;
+    }
+    .report-container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 22px;
+      color: #1e3a5f;
+    }
+    .subtitle {
+      margin: 0;
+      color: #5f6b7a;
+      font-size: 13px;
+    }
+    .summary-bar {
+      margin: 8px 0 16px 0;
+      color: #1b2430;
+      font-size: 13px;
+    }
+    .badge-overdue {
+      color: #fff;
+      background: #b71c1c;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 11px;
+    }
+    .badge-date {
+      color: #b71c1c;
+      font-weight: 700;
+      background: #fdecea;
+      padding: 3px 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #d5dde6;
+      margin-bottom: 16px;
+    }
+    th {
+      background: #e8eef5;
+      color: #1e3a5f;
+      text-align: left;
+      padding: 8px 10px;
+      border: 1px solid #d5dde6;
+      font-size: 12px;
+    }
+    td {
+      padding: 8px 10px;
+      border: 1px solid #d5dde6;
+    }
+    tr.alt {
+      background: #f4f6f8;
+    }
+    .section-header {
+      background: #1e3a5f;
+      color: #fff;
+      padding: 10px 12px;
+      font-weight: 700;
+      border: 1px solid #16304f;
+    }
+    .empty-header {
+      background: #dce8f4;
+      padding: 10px 12px;
+      font-weight: 700;
+      border: 1px solid #c5d5e4;
+    }
+    .total-header {
+      background: #d6e4f0;
+      padding: 10px 12px;
+      font-weight: 700;
+      border: 1px solid #c5d5e4;
+    }
+    .ticket-link {
+      color: #0563c1;
+      font-weight: 700;
+      font-family: Consolas, monospace;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="report-container">
+    <h1>ASM REPORT : SERVICING</h1>
+    <p class="subtitle">Open tickets only · Blocked excluded · As of 9/28/2026, 1:52:34 PM</p>
+    <p class="summary-bar">
+      <strong>10</strong> open tickets · <strong style="color:#b71c1c;">10</strong> overdue · Click a ticket number to open it in Jira
+    </p>
+
+    <table>
+      <!-- Enterprise Services -->
+      <tr>
+        <td colspan="5" class="section-header">
+          Enterprise Services — 5 open <span class="badge-overdue">Overdue</span>
+        </td>
+      </tr>
+      <tr>
+        <th>Ticket</th>
+        <th>Ticket name</th>
+        <th>Status</th>
+        <th>Severity</th>
+        <th>Due date</th>
+      </tr>
+      <tr>
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-23848" class="ticket-link">ASM-23848</a></td>
+        <td>Blocked; team intends to delete endpoint</td>
+        <td>Validation</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-07-23</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr class="alt">
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-23852" class="ticket-link">ASM-23852</a></td>
+        <td>Architectural remediation for server-side code execution</td>
+        <td>In Progress</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-07-23</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr>
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-24343" class="ticket-link">ASM-24343</a></td>
+        <td>PLAISSE-BRMS-Legacy | PRD and STG Access from One AD Group</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-08-06</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr class="alt">
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-25116" class="ticket-link">ASM-25116</a></td>
+        <td>PLAISSE-BRMS-Legacy | Basic Authentication Used on KIE Server API Endpoints</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-08-06</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr>
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-25571" class="ticket-link">ASM-25571</a></td>
+        <td>PLAISSE-BRMS-Legacy | Undertow Host Header Validation Bypass</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-08-06</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+
+      <!-- Eagle -->
+      <tr>
+        <td colspan="5" class="section-header">
+          Eagle — 4 open <span class="badge-overdue">Overdue</span>
+        </td>
+      </tr>
+      <tr>
+        <th>Ticket</th>
+        <th>Ticket name</th>
+        <th>Status</th>
+        <th>Severity</th>
+        <th>Due date</th>
+      </tr>
+      <tr>
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-25507" class="ticket-link">ASM-25507</a></td>
+        <td>MacChat2 - Wiz Issue: Publicly exposed KMS Encryption Keys</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-09-15</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr class="alt">
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-28390" class="ticket-link">ASM-28390</a></td>
+        <td>WIZ Alert: Public VM/Serverless : garage-orc-plaisse-stg-GarageOcrAwsTextract</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-09-24</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr>
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-28391" class="ticket-link">ASM-28391</a></td>
+        <td>WIZ Alert: Public VM/Serverless : garage-orc-plaisse-prd-GarageOcrAwsTextract</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-09-24</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+      <tr class="alt">
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-28392" class="ticket-link">ASM-28392</a></td>
+        <td>WIZ Alert: Public VM/Serverless : garage-orc-plaisse-prd-GarageTextractForms</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-09-24</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+
+      <!-- Default Servicing -->
+      <tr>
+        <td colspan="5" class="section-header">
+          Default Servicing — 1 open <span class="badge-overdue">Overdue</span>
+        </td>
+      </tr>
+      <tr>
+        <th>Ticket</th>
+        <th>Ticket name</th>
+        <th>Status</th>
+        <th>Severity</th>
+        <th>Due date</th>
+      </tr>
+      <tr>
+        <td><a href="https://pennymac.atlassian.net/browse/ASM-12367" class="ticket-link">ASM-12367</a></td>
+        <td>PropertyPreservation - Misconfigured Cognito Pools</td>
+        <td>To Do</td>
+        <td>High</td>
+        <td><span class="badge-date">2026-05-31</span> <span class="badge-overdue" style="font-size:10px;">Overdue</span></td>
+      </tr>
+
+      <!-- Other Categories -->
+      <tr><td colspan="5" class="empty-header">Core Servicing — 0 open tickets</td></tr>
+      <tr><td colspan="5" class="empty-header">Financial Serving — 0 open tickets</td></tr>
+      <tr><td colspan="5" class="empty-header">Enterprise Functions — 0 open tickets</td></tr>
+
+      <!-- Total Summary -->
+      <tr><td colspan="5" class="total-header">Total open tickets: 10</td></tr>
+    </table>
+
+    <p style="color:#5f6b7a;font-size:12px;">
+      Jira dashboard: <a href="https://pennymac.atlassian.net/jira/dashboards/14965" style="color:#0563c1;">https://pennymac.atlassian.net/jira/dashboards/14965</a>
+    </p>
+  </div>
+
+</body>
+</html>
